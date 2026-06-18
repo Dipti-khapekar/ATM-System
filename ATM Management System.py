@@ -31,7 +31,7 @@ class ATM:
         if self.check_pin():
             amount = float(input("Enter amount to withdraw: ₹"))
             if amount <= self.__balance:
-                self.__balance -=amount
+                self.__balance -= amount
                 print(f"₹{amount} withdraw successfully.")
                 print(f"Remaining Balance: ₹{self.__balance}")
             else:
