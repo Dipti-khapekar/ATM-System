@@ -46,7 +46,7 @@ class ATM:
 #Creating an object
 user1 = ATM("Daksh",1234,10000)
 
-while True:
+while True:  #looping system
     print("\n===== ATM MANAGEMENT SYSTEM =====")
     print("1. Check Balance")
     print("2. Deposit Mony")
