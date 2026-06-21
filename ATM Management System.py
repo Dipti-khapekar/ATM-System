@@ -12,9 +12,9 @@ class ATM:
             print("Invalid PIN!")
             return False
 
-    def check_balance(self):
+    def check_balance(self): 
         if self.check_pin():
-            print(f"Available Balance: ₹{self.__balance}")
+            print(f"Available Balance:  {self.__balance}")
 
     def deposit(self):
             if self.check_pin():
@@ -23,14 +23,14 @@ class ATM:
                     self.__balance += amount
                     print(f"₹{amount} deposited successfully:")
                     print(f"Current Balance: ₹{self.__balance}")
-                else:
+                else: 
                     print("Invalid amount!")
 
 
     def withdraw(self):
         if self.check_pin():
             amount = float(input("Enter amount to withdraw: ₹"))
-            if amount <= self.__balance:
+            if amount <= self.__balance: 
                 self.__balance -= amount
                 print(f"₹{amount} withdraw successfully.")
                 print(f"Remaining Balance: ₹{self.__balance}")
